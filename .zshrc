@@ -43,3 +43,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 source /Users/jeremie/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+# proto
+export PROTO_HOME="$HOME/.proto"
+export PATH="$PROTO_HOME/shims:$PROTO_HOME/bin:$PATH"
+# go
+export GOBIN="$HOME/go/bin"
+export PATH="$GOBIN:$PATH"

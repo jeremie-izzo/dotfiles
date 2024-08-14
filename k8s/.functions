@@ -1,3 +1,19 @@
 #!/bin/bash
 
 alias kc=kubectl
+
+function kcctx() {
+  if [ -n "$1" ]; then
+    kubectx $1
+  else
+    kubectx
+  fi
+}
+
+function kcns() {
+  if [ -n "$1" ]; then
+    kubens $1
+  else
+    kubens
+  fi
+}

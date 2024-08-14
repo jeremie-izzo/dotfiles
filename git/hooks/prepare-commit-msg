@@ -7,5 +7,5 @@ JIRA_ID=$(echo "$CURRENT_BRANCH" | grep -Eo "[A-Z0-9]{1,10}-?[A-Z0-9]+-\d+")
 
 if [ ! -z "$JIRA_ID" ]; then
   echo "[$JIRA_ID] $COMMIT_MSG" > $COMMIT_FILE
-  echo "JIRA ID '$JIRA_ID' prepended to commit message. (Use --no-verify to skip)"
+  echo "JIRA ID '$JIRA_ID' prepended to commit message."
 fi
