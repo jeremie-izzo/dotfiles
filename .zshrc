@@ -30,12 +30,6 @@ source $ZSH/oh-my-zsh.sh
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jeremie/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jeremie/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/jeremie/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jeremie/google-cloud-sdk/completion.zsh.inc'; fi
-
 if [ -f ~/config/.bash_profile ]; then source ~/config/.bash_profile; fi
 
 export NVM_DIR="$HOME/.nvm"
@@ -50,3 +44,8 @@ export PATH="$PROTO_HOME/shims:$PROTO_HOME/bin:$PATH"
 # go
 export GOBIN="$HOME/go/bin"
 export PATH="$GOBIN:$PATH"
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jeremie/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jeremie/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jeremie/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jeremie/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
