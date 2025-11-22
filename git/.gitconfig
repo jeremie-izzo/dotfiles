@@ -1,14 +1,15 @@
-[core]
+[includeIf "gitdir:/"]
+	path = ~/dotfiles/git/.gitconfig.personal
 
-        excludesfile = ~/.gitignore_global
-        editor = /usr/bin/vim
-        hooksPath= ~/config/git/hooks
+[includeIf "gitdir:~/Repositories/"]
+	path = ~/dotfiles/git/.gitconfig.lightspeed
 
-[user]
+[includeIf "gitdir:~/Repositories/personal/"]
+	path = ~/dotfiles/git/.gitconfig.personal
 
-        name = Jeremie Izzo
-        email = izzo.j@hotmail.com
-
-[pull]
-
-	      rebase = true
+[init]
+	defaultBranch = master
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/

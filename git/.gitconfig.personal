@@ -1,13 +1,9 @@
 [core]
-
         excludesfile = ~/.gitignore_global
         editor = /usr/bin/vim
-        hooksPath= ~/config/git/hooks
-
+        #hooksPath= ~/dotfiles/git/hooks
 [user]
-
         name = Jeremie Izzo
-        email = jeremie@quotemachine.com
-
+        email = izzo.jer92@gmail.com
 [pull]
 	      rebase = true

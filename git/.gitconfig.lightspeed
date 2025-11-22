@@ -1,11 +1,8 @@
 [user]
-
     name = jeremieizzo
     email = jeremie.izzo@lightspeedhq.com
-
+	signingkey = 597B37366810C8CF
 [url "git@github.com:"]
 	insteadOf = https://github.com/
-[user]
-	signingkey = 597B37366810C8CF
 [commit]
 	gpgsign = true

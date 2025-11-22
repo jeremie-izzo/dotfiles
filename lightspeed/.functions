@@ -1,0 +1,43 @@
+#!/bin/bash
+
+alias jg='jinn gaia'
+alias vault-lab='export VAULT_ADDR="https://vault-lab.lightspeedsbx.app"; vault login -address=$VAULT_ADDR -method=oidc'
+alias vault-sbx='export VAULT_ADDR="https://vault.lightspeedsbx.app"; vault login -address=$VAULT_ADDR -method=oidc'
+alias vault-stg='export VAULT_ADDR="https://vault.lightspeedstg.app"; vault login -address=$VAULT_ADDR -method=oidc'
+alias vault-prd='export VAULT_ADDR="https://vault.lightspeed.app"; vault login -address=$VAULT_ADDR -method=oidc'
+
+#define a map that maps the environment to the vault address
+declare -A ENV_URLS=(
+  ["stg"]="https://vault.lightspeedstg.app"
+  ["prd"]="https://vault.lightspeed.app"
+  ["sbx"]="https://vault.lightspeedsbx.app"
+)
+
+function initVault() {
+  if [ -z "$1" ]; then
+    echo "Usage: vault <env>"
+    return 1
+  fi
+
+  if [ -z "${ENV_URLS[$1]}" ]; then
+    echo "Invalid environment"
+    return 1
+  fi
+
+  export VAULT_ADDR=${ENV_URLS[$1]}
+  vault login -address="$VAULT_ADDR" -method=oidc
+}
+
+function jgi() {
+  export GOOGLE_APPLICATION_CREDENTIALS=/Users/$USER/.config/gcloud/application_default_credentials.json
+
+  if [ -z "$1" ]; then
+    echo "Usage: jgi <env>"
+    return 1
+  fi
+
+  initVault "$1" || return 1
+
+  jinn gaia init "$1"
+  jinn gaia workspace select "$1"
+}

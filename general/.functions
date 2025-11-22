@@ -1,0 +1,19 @@
+#!/bin/bash
+
+function webstorm() {
+  if [ -z "$1" ]; then
+    echo "Usage: ide <path>"
+    return 1
+  fi
+
+  open -a "WebStorm" "$1"
+}
+
+function goland() {
+  if [ -z "$1" ]; then
+    echo "Usage: ide <path>"
+    return 1
+  fi
+
+  open -a "Goland" "$1"
+}
