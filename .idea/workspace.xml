@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b1b848a-a811-4d1a-a308-ffcc7666301e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/general/.functions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.bash_profile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.bashrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/config.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.zshrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/git/.gitconfig" beforeDir="false" afterPath="$PROJECT_DIR$/git/.gitconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git/.gitconfig.lightspeed" beforeDir="false" afterPath="$PROJECT_DIR$/git/.gitconfig.lightspeed" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git/.gitconfig.quotemachine" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symlink/install.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +81,7 @@
       <workItem from="1756922147565" duration="2000" />
       <workItem from="1757684913808" duration="2464000" />
       <workItem from="1763822587979" duration="753000" />
-      <workItem from="1763825029724" duration="1920000" />
+      <workItem from="1763825029724" duration="2925000" />
     </task>
     <servers />
   </component>
